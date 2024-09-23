@@ -1,72 +1,123 @@
 <!DOCTYPE html>
 <html lang="fi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lounasravintola</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Etusivu</a></li>
-                <li><a href="#">Ruokalistat</a></li>
-                <li><a href="#">Yhteystiedot</a></li>
-            </ul>
-        </nav>
-        <button id="openDialog" class="register-button">Dialogi</button>
+      <nav>
+        <ul>
+          <li><a href="#">Etusivu</a></li>
+          <li><a href="#">Ruokalistat</a></li>
+          <li><a href="#">Yhteystiedot</a></li>
+        </ul>
+      </nav>
+      <button id="openDialog" class="register-button">Dialogi</button>
     </header>
 
+    <!-- Päivitetty Hero-osio -->
     <section class="herobanner">
-        <img src="herobanner.webp" alt="Herobanner" class="herobanner-image">
+      <div class="herobanner-content">
+        <h1>Lounasravintola</h1>
+        <p>Tervetuloa nauttimaan herkullisesta lounaasta!</p>
+        <div class="pill-buttons">
+          <a href="#" class="pill-button">Ruokalistat</a>
+          <a href="#" class="pill-button">Varaa pöytä</a>
+        </div>
+      </div>
     </section>
 
     <main>
-        <section class="about">
-            <img src="ravintola.jpg" alt="Restaurant View">
-            <div class="about-text">
-                <h1>Tämä on meidän tarinamme</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dolorum ad adipisci non vel mollitia, fugit sint magnam aspernatur quas a atque iste exercitationem? Aspernatur delectus accusamus corrupti iure autem.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque possimus reprehenderit optio, velit dolorum ratione error vel beatae, tempore quod atque odit eligendi sed iste non placeat, rem maxime temporibus.</p>
-            </div>
-        </section>
-        <img src="kuva.jpg" alt="Pesukarhu" class="pesukarhu">
+      <section class="about">
+        <img src="ravintola.jpg" alt="Restaurant View" />
+        <div class="about-text">
+          <h1>Tämä on meidän tarinamme</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            dolorum ad adipisci non vel mollitia, fugit sint magnam aspernatur
+            quas a atque iste exercitationem? Aspernatur delectus accusamus
+            corrupti iure autem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            possimus reprehenderit optio, velit dolorum ratione error vel
+            beatae, tempore quod atque odit eligendi sed iste non placeat, rem
+            maxime temporibus.
+          </p>
+        </div>
+      </section>
+
+      <!-- Uusi Section-elementti -->
+      <section class="features">
+        <div class="feature-item">
+          <h2>Laadukas Ruoka</h2>
+          <p>Tarjoamme parhaista raaka-aineista valmistettua ruokaa.</p>
+        </div>
+        <div class="feature-item">
+          <h2>Erinomainen Palvelu</h2>
+          <p>Henkilökuntamme varmistaa miellyttävän kokemuksen.</p>
+        </div>
+        <div class="feature-item">
+          <h2>Upeat Puitteet</h2>
+          <p>Ravintolamme tarjoaa viihtyisän ympäristön.</p>
+        </div>
+      </section>
+
+      <img src="kuva.jpg" alt="Pesukarhu" class="pesukarhu" />
     </main>
 
     <footer>
-        <p>Copyright</p>
+      <p>Copyright</p>
     </footer>
 
     <dialog id="registerDialog">
-        <form method="dialog">
-            <h2>Rekisteröidy tiedoillasi</h2>
-            <img src="login.jpg" alt="Rekisteröinti" class="dialog-image">
-            
-            <label for="surname">Sukunimi, minimi 3 kirjainta:</label>
-            <input type="text" id="surname" name="surname" minlength="3" required>
-            
-            <label for="email">Email osoite (@metropolia.fi):</label>
-            <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@metropolia\.fi" required>
-            
-            <label for="password">Salasana:</label>
-            <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" required>
-            
-            <div class="dialog-buttons">
-                <button type="submit">Lähetä</button>
-                <button type="button" id="closeDialog">Sulje</button>
-            </div>
-        </form>
+      <form method="dialog">
+        <h2>Rekisteröidy tiedoillasi</h2>
+        <img src="login.jpg" alt="Rekisteröinti" class="dialog-image" />
+
+        <label for="surname">Sukunimi, minimi 3 kirjainta:</label>
+        <input type="text" id="surname" name="surname" minlength="3" required />
+
+        <label for="email">Email osoite (@metropolia.fi):</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          pattern="[a-z0-9._%+-]+@metropolia\.fi"
+          required
+        />
+
+        <label for="password">Salasana:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          pattern="(?=.*\d)(?=.*[A-Z]).{8,}"
+          required
+        />
+
+        <div class="dialog-buttons">
+          <button type="submit">Lähetä</button>
+          <button type="button" id="closeDialog">Sulje</button>
+        </div>
+      </form>
     </dialog>
 
     <script>
-        document.getElementById('openDialog').addEventListener('click', function() {
-            document.getElementById('registerDialog').showModal();
+      document
+        .getElementById("openDialog")
+        .addEventListener("click", function () {
+          document.getElementById("registerDialog").showModal();
         });
 
-        document.getElementById('closeDialog').addEventListener('click', function() {
-            document.getElementById('registerDialog').close();
+      document
+        .getElementById("closeDialog")
+        .addEventListener("click", function () {
+          document.getElementById("registerDialog").close();
         });
     </script>
-</body>
+  </body>
 </html>
