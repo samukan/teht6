@@ -294,7 +294,67 @@ input:invalid {
   background-color: #ccc;
 }
 
-/* Media Queryt */
+.menu {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.menu h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.menu-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.menu-item:hover {
+  transform: translateY(-10px);
+}
+
+.menu-item h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.menu-item p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.menu-item .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 15px;
+}
+
+.section-divider {
+  width: 80%;
+  height: 2px;
+  background-color: #ccc;
+  margin: 40px auto;
+}
 
 /* Pienet näytöt */
 @media only screen and (max-width: 768px) {
@@ -355,6 +415,21 @@ input:invalid {
   .pesukarhu {
     display: none;
   }
+  .menu h2 {
+    font-size: 28px;
+  }
+
+  .menu-item h3 {
+    font-size: 20px;
+  }
+
+  .menu-item p {
+    font-size: 14px;
+  }
+
+  .menu-item .price {
+    font-size: 16px;
+  }
 }
 
 /* Erittäin pienet näytöt */
@@ -399,6 +474,21 @@ input:invalid {
 
   footer {
     padding: 5px;
+  }
+  .menu {
+    padding: 40px 10px;
+  }
+
+  .menu h2 {
+    font-size: 24px;
+  }
+
+  .menu-grid {
+    gap: 20px;
+  }
+
+  .menu-item {
+    padding: 15px;
   }
 }
 
