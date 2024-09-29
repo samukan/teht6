@@ -1,4 +1,88 @@
 /* Yleiset tyylit */
+@font-face {
+  font-family: "Roboto";
+  src: url("fontti/Roboto-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fontti/Roboto-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fontti/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fontti/Roboto-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fontti/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fontti/Roboto-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fontti/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fontti/Roboto-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fontti/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fontti/Roboto-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fontti/Roboto-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fontti/Roboto-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
 html,
 body {
   height: 100%;
@@ -7,7 +91,9 @@ body {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   box-sizing: border-box;
   background-color: #f4f4f4;
   font-size: 16px;
@@ -99,11 +185,13 @@ nav ul li a:hover {
 .herobanner-content h1 {
   font-size: 48px;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .herobanner-content p {
   font-size: 24px;
   margin-bottom: 30px;
+  font-weight: 400;
 }
 
 /* Pillerinappien tyylit */
@@ -122,6 +210,7 @@ nav ul li a:hover {
   font-size: 18px;
   border: 2px solid #fff;
   transition: background-color 0.3s;
+  font-weight: 500;
 }
 
 .pill-button:hover {
@@ -158,10 +247,12 @@ main {
   margin-left: 20px;
   font-size: 16px;
   line-height: 1.6;
+  font-weight: 400;
 }
 
 .about-text h1 {
   margin-top: 0;
+  font-weight: 700;
 }
 
 .about-text p {
@@ -187,11 +278,13 @@ main {
 .feature-item h2 {
   font-size: 24px;
   margin-bottom: 15px;
+  font-weight: 700;
 }
 
 .feature-item p {
   font-size: 16px;
   line-height: 1.5;
+  font-weight: 400;
 }
 
 /* Pesukarhu-kuva */
@@ -237,13 +330,14 @@ dialog h2 {
   color: #0e0e0f;
   font-size: 20px;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 label {
   display: block;
   margin: 10px 0 5px;
   text-align: left;
-  font-weight: bold;
+  font-weight: 700;
   color: #333;
 }
 
@@ -255,6 +349,7 @@ input {
   border-radius: 5px;
   box-sizing: border-box;
   transition: border-color 0.3s;
+  font-family: "Roboto", sans-serif;
 }
 
 input:valid {
@@ -279,6 +374,7 @@ input:invalid {
   cursor: pointer;
   background-color: #3782de;
   color: white;
+  font-weight: 500;
 }
 
 .dialog-buttons button:hover {
@@ -303,6 +399,7 @@ input:invalid {
 .menu h2 {
   font-size: 36px;
   margin-bottom: 40px;
+  font-weight: 700;
 }
 
 .menu-grid {
@@ -326,16 +423,18 @@ input:invalid {
 .menu-item h3 {
   font-size: 24px;
   margin-bottom: 15px;
+  font-weight: 700;
 }
 
 .menu-item p {
   font-size: 16px;
   margin-bottom: 20px;
+  font-weight: 400;
 }
 
 .menu-item .price {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   color: #333;
   position: absolute;
   bottom: 20px;
@@ -415,6 +514,7 @@ input:invalid {
   .pesukarhu {
     display: none;
   }
+
   .menu h2 {
     font-size: 28px;
   }
@@ -475,6 +575,7 @@ input:invalid {
   footer {
     padding: 5px;
   }
+
   .menu {
     padding: 40px 10px;
   }
