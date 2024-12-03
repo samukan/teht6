@@ -15,7 +15,9 @@
           <li><a href="#">Yhteystiedot</a></li>
         </ul>
       </nav>
-      <button id="openDialog" class="register-button">Dialogi</button>
+      <button id="openDialog" class="register-button">
+        Avaa rekisteröintilomake
+      </button>
     </header>
 
     <section class="herobanner">
@@ -23,17 +25,17 @@
         <h1>Lounasravintola</h1>
         <p>Tervetuloa nauttimaan herkullisesta lounaasta!</p>
         <div class="pill-buttons">
-          <a href="#" class="pill-button">Ruokalistat</a>
-          <a href="#" class="pill-button">Varaa pöytä</a>
+          <a href="#menu" class="pill-button">Ruokalistat</a>
+          <a href="#reservation" class="pill-button">Varaa pöytä</a>
         </div>
       </div>
     </section>
 
     <main>
-      <section class="about">
-        <img src="ravintola.jpg" alt="Restaurant View" />
+      <section class="about" id="about">
+        <img src="ravintola.jpg" alt="Kuva ravintolan sisätiloista" />
         <div class="about-text">
-          <h1>Tämä on meidän tarinamme</h1>
+          <h2>Tämä on meidän tarinamme</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
             dolorum ad adipisci non vel mollitia, fugit sint magnam aspernatur
@@ -50,57 +52,60 @@
       </section>
 
       <section class="features">
+        <h2>Ravintolamme tarjoaa</h2>
         <div class="feature-item">
-          <h2>Laadukas Ruoka</h2>
+          <h3>Laadukas Ruoka</h3>
           <p>Tarjoamme parhaista raaka-aineista valmistettua ruokaa.</p>
         </div>
         <div class="feature-item">
-          <h2>Erinomainen Palvelu</h2>
+          <h3>Erinomainen Palvelu</h3>
           <p>Henkilökuntamme varmistaa miellyttävän kokemuksen.</p>
         </div>
         <div class="feature-item">
-          <h2>Upeat Puitteet</h2>
+          <h3>Upeat Puitteet</h3>
           <p>Ravintolamme tarjoaa viihtyisän ympäristön.</p>
         </div>
       </section>
 
       <div class="section-divider"></div>
 
-      <section class="menu">
+      <section class="menu" id="menu">
         <h2>Päivän Lounas</h2>
         <div class="menu-grid">
           <div class="menu-item">
-            <img src="lohikeitto.webp" alt="Lohikeitto" />
+            <img src="lohikeitto.webp" alt="Annos Lohikeittoa tillillä" />
             <h3>Lohikeitto</h3>
             <p>Kermainen lohikeitto tuoreella tillillä.</p>
             <span class="price">8,90€</span>
           </div>
           <div class="menu-item">
-            <img src="kana_riisi.jpg" alt="Kana_riisi" />
+            <img src="kana_riisi.jpg" alt="Annos Kanaa ja riisiä" />
             <h3>Kanaa ja riisiä</h3>
             <p>Paistettua kanaa ja jasmiiniriisiä.</p>
             <span class="price">9,50€</span>
           </div>
           <div class="menu-item">
-            <img src="kasvislasagne.jpg" alt="Kasvislasagne" />
+            <img src="kasvislasagne.jpg" alt="Annos Kasvislasagnea" />
             <h3>Kasvislasagne</h3>
             <p>Maukas lasagne tuoreista vihanneksista.</p>
             <span class="price">8,50€</span>
           </div>
         </div>
       </section>
-
-      <img src="kuva.jpg" alt="Pesukarhu" class="pesukarhu" />
     </main>
 
     <footer>
-      <p>Copyright</p>
+      <p>Copyright © 2024 Lounasravintola. Kaikki oikeudet pidätetään.</p>
     </footer>
 
     <dialog id="registerDialog">
       <form method="dialog">
         <h2>Rekisteröidy tiedoillasi</h2>
-        <img src="login.jpg" alt="Rekisteröinti" class="dialog-image" />
+        <img
+          src="login.jpg"
+          alt="Ikoni rekisteröintiä varten"
+          class="dialog-image"
+        />
 
         <label for="surname">Sukunimi, minimi 3 kirjainta:</label>
         <input type="text" id="surname" name="surname" minlength="3" required />

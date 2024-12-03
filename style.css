@@ -134,13 +134,13 @@ nav ul li a:hover {
 }
 
 .register-button {
-  background-color: #0d89ba;
+  background-color: #005d99;
   border: 2px solid #1b1b1c;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  color: white;
+  color: #ffffff;
   position: absolute;
   right: 20px;
   top: 50%;
@@ -148,7 +148,7 @@ nav ul li a:hover {
 }
 
 .register-button:hover {
-  background-color: #0a12b1;
+  background-color: #004b80;
 }
 
 /* Hero-bannerin tyylit */
